@@ -1,0 +1,29 @@
+.AboutSection {
+  height: 600px;
+}
+.Layers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Layer2 {
+  background-color: var(--orange4);
+  width: 535px;
+  height: 555px;
+  border-radius: 34px;
+  position: absolute;
+}
+
+.Layer3 {
+  background-color: var(--orange5);
+  width: 511px;
+  height: 556px;
+  border-radius: 34px;
+  z-index: 3;
+  position: absolute;
+  top: -40;
+  left: -10;
+}

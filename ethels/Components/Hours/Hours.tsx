@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Hours = () => {
   return (
-    <section className={styles["HoursSection"]}>
+    <section id="Hours" className={styles["HoursSection"]}>
       <h2 className={styles["HoursHeading"]}>Hours & Contact </h2>
       <div className={styles["HoursListing"]}>
         <div className={styles["Days"]}>
@@ -37,7 +37,9 @@ export const Hours = () => {
         <p className={styles["LocationClick"]}>click for directions</p>
         <br />
         <br />
-        <p className={styles["Phone"]}>519-725-2361</p>
+        <Link href="tel:519-725-2361">
+          <p className={styles["Phone"]}>519-725-2361</p>
+        </Link>
       </div>
     </section>
   );

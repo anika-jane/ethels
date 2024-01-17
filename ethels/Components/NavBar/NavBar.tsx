@@ -19,13 +19,17 @@ export const NavBar = () => {
           <Link className={styles["Nav-Link"]} href="/">
             Menu
           </Link>
-          <Link className={styles["Nav-Link"]} href="/">
+          <Link className={styles["Nav-Link"]} href="#Specials">
             Specials
           </Link>
-          <Link className={styles["Nav-Link"]} href="/">
+          <Link
+            className={styles["Nav-Link"]}
+            href="https://order2.silverwarepos.com/app/EthelsLounge#!/menu"
+            target="_blank"
+          >
             Order
           </Link>
-          <Link className={styles["Nav-Link"]} href="/">
+          <Link className={styles["Nav-Link"]} href="#Hours">
             About
           </Link>
           <Link className={styles["Nav-Link"]} href="/">
