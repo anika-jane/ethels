@@ -1,0 +1,21 @@
+.LegendarySection {
+  background-color: var(--ethels-red);
+  padding: 48px 24px;
+}
+
+.LegendaryText {
+  color: var(--orange3);
+  text-align: center;
+  font-family: Clarendon URW Extra Wide;
+  font-size: var(--xlg);
+  font-weight: 800;
+  line-height: 23px;
+}
+
+.SmallText {
+  color: var(--orange3);
+  font-family: Clarendon URW Extra Wide;
+  font-size: var(--xsm);
+  font-weight: 800;
+  line-height: 23px;
+}

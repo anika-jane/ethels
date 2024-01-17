@@ -1,0 +1,28 @@
+.Main-Nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.Header-Logo {
+  margin: 0 auto;
+}
+
+.Navigation {
+  margin: 27px auto;
+  text-align: center;
+  row-gap: 56px;
+
+  width: 613px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Nav-Link {
+  color: var(--red2);
+  font-family: Clarendon URW Extra Wide;
+  font-size: var(--md);
+  font-weight: 700;
+  letter-spacing: -0.17px;
+  text-transform: uppercase;
+}

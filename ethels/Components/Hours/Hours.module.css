@@ -1,0 +1,78 @@
+.HoursSection {
+  background-color: var(--ethels-red);
+  padding: 32px 24px;
+}
+
+.HoursHeading {
+  color: var(--orange3);
+  text-align: center;
+  font-family: Superclarendon;
+  font-size: var(--xxlg);
+  font-style: italic;
+  font-weight: 900;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.HoursListing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 400px;
+  height: auto;
+}
+
+.Days {
+  color: var(--orange2);
+  /* text-align: right; */
+  font-family: Postino Std;
+  font-size: var(--mid);
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.Hours {
+  color: var(--orange3);
+  font-family: Postino Std;
+  font-size: var(--mid);
+  font-weight: 500;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.Location {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.LocationHeading {
+  color: var(--orange2);
+  text-align: center;
+  font-family: Postino Std;
+  font-size: var(--sm);
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.LocationClick {
+  color: var(--orange2);
+  font-family: Postino Std;
+  font-size: var(--xxxsm);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.Phone {
+  color: var(--orange3);
+  font-family: Postino Std;
+  font-size: var(--mid);
+  font-weight: 500;
+  line-height: 42px;
+}
