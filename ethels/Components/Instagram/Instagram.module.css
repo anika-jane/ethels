@@ -1,0 +1,38 @@
+.InstagramSection {
+  padding: 32px 24px;
+}
+
+.InstagramHeader {
+  color: var(--red3);
+  font-family: Clarendon URW Extra Wide;
+  font-size: var(--lg);
+  font-weight: 700;
+  margin-bottom: 27px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.InstagramImages {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.SocialLinks {
+  display: flex;
+  flex-direction: row;
+  padding: 12px 0px;
+  column-gap: 32px;
+  length: 135px;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 816px) {
+  .InstagramImages {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 32px;
+  }
+}

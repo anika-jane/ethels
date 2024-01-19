@@ -1,5 +1,7 @@
 .AboutSection {
-  height: 600px;
+  height: auto;
+  margin-bottom: 60px;
+  padding: 32px 24px;
 }
 .Layers {
   display: flex;
@@ -9,12 +11,23 @@
   position: relative;
 }
 
+.Image {
+  margin: 0 auto;
+  border-radius: 13px;
+  margin-top: 185px;
+  z-index: 99999;
+  position: relative;
+}
+
 .Layer2 {
   background-color: var(--orange4);
   width: 535px;
   height: 555px;
   border-radius: 34px;
   position: absolute;
+  z-index: auto;
+  top: -550px;
+  left: 300px;
 }
 
 .Layer3 {
@@ -22,8 +35,24 @@
   width: 511px;
   height: 556px;
   border-radius: 34px;
-  z-index: 3;
+  z-index: auto;
   position: absolute;
-  top: -40;
-  left: -10;
+  top: -530px;
+  left: 500px;
+}
+
+.AboutText {
+  margin: 0 auto;
+  max-width: 597px;
+  height: auto;
+  margin-top: 68px;
+}
+
+.AboutParagraph {
+  color: var(--black);
+  font-family: Roboto Condensed;
+  font-size: var(--sm);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
 }
