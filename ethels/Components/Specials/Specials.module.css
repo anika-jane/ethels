@@ -6,7 +6,7 @@
 .SpecialsHeader {
   color: var(--orange3);
   text-align: center;
-  font-family: Superclarendon;
+  font-family: var(--c-font);
   font-size: var(--xxlg);
   font-style: italic;
   font-weight: 900;
@@ -35,21 +35,21 @@
 
 .Day {
   color: var(--orange2);
-  font-family: Postino Std;
+  font-family: var(--p-font);
   font-size: var(--mid);
   font-weight: 500;
 }
 
 .Special {
   color: var(--orange3);
-  font-family: Postino Std;
+  font-family: var(--p-font);
   font-size: var(--lg);
   font-weight: 500;
 }
 
 .Price {
   color: var(--orange3);
-  font-family: Postino Std;
+  font-family: var(--p-font);
   font-size: var(--mid);
   font-weight: 500;
 }
@@ -65,10 +65,19 @@
 
 .When {
   color: var(--orange3);
-  font-family: Postino Std;
+  font-family: var(--p-font);
   font-size: var(--sxm);
   font-style: italic;
   font-weight: 500;
+}
+
+.link {
+  color: var(--orange3);
+  font-family: "Roboto Condensed";
+  font-size: var(--mid);
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.18px;
 }
 
 @media screen and (max-width: 768px) {

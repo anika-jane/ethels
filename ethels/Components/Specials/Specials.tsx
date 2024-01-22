@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Specials.module.css";
-import Image from "next/image";
 
 export const Specials = () => {
   return (
@@ -42,8 +41,8 @@ export const Specials = () => {
             <div className={styles["Special"]}>Meatloaf</div>
             <div className={styles["Price"]}>Lunch $14.00, Dinner $18.00</div>
             <div className={styles["Description"]}>
-              Better than your mom'&apos;'s, but don'&apos;'t tell her! Served
-              with mashed potatoes and beef mushroom gravy.
+              Better than your mom&apos;s, but don&apos;t tell her! Served with
+              mashed potatoes and beef mushroom gravy.
             </div>
             <div className={styles["When"]}>Served all day</div>
           </div>
@@ -85,12 +84,11 @@ export const Specials = () => {
             <div className={styles["Day"]}>Friday</div>
             <div className={styles["Special"]}>Wildcard Friday</div>
             <div className={styles["Description"]}>
-              Check out our Instagram page @ethelslounge or ask your server to
-              see what we'&apos;'re serving up each week.
+              Check out our Instagram page{" "}
+              <span className={styles["link"]}>@ethelslounge</span> or ask your
+              server to see what we&apos;re serving up each week.
             </div>
-            <div className={styles["When"]}>
-              All day until it'&apos;'s gone!
-            </div>
+            <div className={styles["When"]}>All day until it&apos;s gone!</div>
           </div>
         </div>
       </div>
@@ -156,8 +154,8 @@ export const Specials = () => {
           <div className={styles["Special"]}>Meatloaf</div>
           <div className={styles["Price"]}>Lunch $14.00, Dinner $18.00</div>
           <div className={styles["Description"]}>
-            Better than your mom'&apos;'s, but don'&apos;'t tell her! Served
-            with mashed potatoes and beef mushroom gravy.
+            Better than your mom&apos;s, but don&apos;t tell her! Served with
+            mashed potatoes and beef mushroom gravy.
           </div>
           <div className={styles["When"]}>Served all day</div>
         </div>
@@ -165,10 +163,11 @@ export const Specials = () => {
           <div className={styles["Day"]}>Friday</div>
           <div className={styles["Special"]}>Wildcard Friday</div>
           <div className={styles["Description"]}>
-            Check out our Instagram page @ethelslounge or ask your server to see
-            what we'&apos;'re serving up each week.
+            Check out our Instagram page{" "}
+            <span className={styles["link"]}>@ethelslounge</span> or ask your
+            server to see what we&apos;re serving up each week.
           </div>
-          <div className={styles["When"]}>All day until it'&apos;'s gone!</div>
+          <div className={styles["When"]}>All day until it&apos;s gone!</div>
         </div>
       </div>
     </section>

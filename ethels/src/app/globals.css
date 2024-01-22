@@ -25,6 +25,10 @@
   --lg: 22px;
   --xlg: 23px;
   --xxlg: 32px;
+
+  /*fonts*/
+  --c-font: "clarendon-urw-extra-wide";
+  --p-font: "postino-std";
 }
 
 @media (prefers-color-scheme: dark) {

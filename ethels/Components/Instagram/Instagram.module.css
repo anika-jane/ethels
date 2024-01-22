@@ -4,7 +4,7 @@
 
 .InstagramHeader {
   color: var(--red3);
-  font-family: Clarendon URW Extra Wide;
+  font-family: var(--c-font);
   font-size: var(--lg);
   font-weight: 700;
   margin-bottom: 27px;

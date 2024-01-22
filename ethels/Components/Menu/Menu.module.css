@@ -1,0 +1,22 @@
+.MenuSection {
+  height: 100%;
+}
+.MenuBackground {
+  width: 670px;
+  height: 937px;
+  background-image: url(/Assets/Backgrounds/menuBackground.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.MenuLink {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -24,7 +24,7 @@
 .OrderLink,
 .AboutLink {
   color: var(--red2);
-  font-family: Clarendon URW Extra Wide;
+  font-family: var(--c-font);
   font-size: var(--md);
   font-weight: 700;
   letter-spacing: -0.17px;
