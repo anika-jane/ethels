@@ -12,17 +12,31 @@ import Image from "next/image";
 
 register();
 
+// Step 1: Define a custom style interface
+interface CustomStyle extends React.CSSProperties {
+  "--swiper-pagination-color"?: string;
+  "--swiper-pagination-bullet-inactive-color"?: string;
+  "--swiper-pagination-bullet-inactive-opacity"?: string;
+  "--swiper-pagination-bullet-size"?: string;
+  "--swiper-pagination-bullet-horizontal-gap"?: string;
+  "--swiper-pagination-bottom"?: string;
+}
+
 export default function App() {
+  // Step 2: Use the custom style type
+  const customStyle: CustomStyle = {
+    "--swiper-pagination-color": "#e14747",
+    "--swiper-pagination-bullet-inactive-color": "#fac88d",
+    "--swiper-pagination-bullet-inactive-opacity": "1",
+    "--swiper-pagination-bullet-size": "12px",
+    "--swiper-pagination-bullet-horizontal-gap": "4px",
+    "--swiper-pagination-bottom": "37px",
+  };
+
   return (
     <>
       <Swiper
-        style={{
-          "--swiper-pagination-color": "#e14747",
-          "--swiper-pagination-bullet-inactive-color": "#fac88d",
-          "--swiper-pagination-bullet-inactive-opacity": "1",
-          "--swiper-pagination-bullet-size": "12px",
-          "--swiper-pagination-bullet-horizontal-gap": "4px",
-        }}
+        style={customStyle}
         spaceBetween={30}
         mousewheel={true}
         pagination={{
