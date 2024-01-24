@@ -45,23 +45,10 @@ export default function App() {
         modules={[Mousewheel, Pagination]}
         className={styles["SwiperContainer"]}
       >
-        <SwiperSlide>
-          <Image
-            src="/Assets/Images/the-interior 2.png"
-            className={styles["SwiperImage"]}
-            height={500}
-            width={500}
-            alt=""
-          />
-        </SwiperSlide>
+        <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
     </>
   );

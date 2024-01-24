@@ -16,20 +16,20 @@ export const About = () => {
       </div>
       <div className={styles["AboutText"]}>
         <p className={styles["AboutParagraph"]}>
-          Ethel's Lounge was originally a Black Rhythm & Blues and Soul Club in
-          Eastside Detroit.
+          Ethel&apos;s Lounge was originally a Black Rhythm & Blues and Soul
+          Club in Eastside Detroit.
           <br />
           <br />
-          Ethel, who ran the place, was a loan sharks's mistress who loved the
-          music and ran the place with an iron fist.
+          Ethel, who ran the place, was a loan sharks&apos;s mistress who loved
+          the music and ran the place with an iron fist.
           <br />
           <br />
-          The Club closed in the late 1980's and the sign was liberated shortly
-          thereafter.
+          The Club closed in the late 1980&apos;s and the sign was liberated
+          shortly thereafter.
           <br />
           <br />
-          Ethel's menu today reflects some of the Soul side of Southern cooking,
-          such as our famous Pulled Pork, Homemade Beans and Meatloaf.
+          Ethel&apos;s menu today reflects some of the Soul side of Southern
+          cooking, such as our famous Pulled Pork, Homemade Beans and Meatloaf.
           Everything is made from scratch.
           <br />
           <br />

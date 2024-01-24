@@ -1,0 +1,11 @@
+.HeroSection {
+  height: 600px;
+  background-image: url("/Assets/Backgrounds/menuBackground.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.HeroImageContainer {
+  background-image: url("/Assets/Backgrounds/menuBackground.png");
+  background-position: center;
+}

@@ -29,10 +29,25 @@
 
 @media screen and (max-width: 816px) {
   .InstagramImages {
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
     margin: 0 auto;
     padding-top: 27px;
     padding-bottom: 32px;
+  }
+
+  .InstagramHeader {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .InstagramImages {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .SocialLinks {
+    padding-top: 0px;
   }
 }
