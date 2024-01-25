@@ -69,10 +69,18 @@
   line-height: 16px;
 }
 
+.LocationHeading:hover {
+  color: var(--orange3);
+}
+
 .Phone {
   color: var(--orange3);
   font-family: var(--p-font);
   font-size: var(--mid);
   font-weight: 500;
   line-height: 42px;
+}
+
+.Phone:hover {
+  color: var(--orange2);
 }

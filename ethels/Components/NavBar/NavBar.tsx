@@ -24,24 +24,24 @@ export const NavBar = () => {
             alt="Ethel's Lounge 30th Anniversary Logo"
             className={styles["logo"]}
           />
-          <Link className={styles["MenuLink"]} href="/">
+          <Link className={styles["Link"]} href="#Menu">
             Menu
           </Link>
-          <Link className={styles["SpecialsLink"]} href="#Specials">
+          <Link className={styles["Link"]} href="#Specials">
             Specials
           </Link>
           <Link
-            className={styles["OrderLink"]}
+            className={styles["Link"]}
             href="https://order2.silverwarepos.com/app/EthelsLounge#!/menu"
             target="_blank"
           >
             Order
           </Link>
-          <Link className={styles["EventsLink"]} href="/">
+          <Link className={styles["Link"]} href="#Events">
             Events
           </Link>
 
-          <Link className={styles["AboutLink"]} href="#About">
+          <Link className={styles["Link"]} href="#About">
             About
           </Link>
         </div>

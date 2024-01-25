@@ -1,7 +1,7 @@
 .Main-Nav {
   max-width: 847px;
   margin: 0 auto;
-  padding: 32px 24px;
+  padding: 32px 24px 0px 24px;
 }
 
 .LinkContainer {
@@ -19,17 +19,17 @@
   margin-right: 40px;
 }
 
-.MenuLink,
-.SpecialsLink,
-.EventsLink,
-.OrderLink,
-.AboutLink {
+.Link {
   color: var(--red2);
   font-family: var(--c-font);
   font-size: var(--md);
   font-weight: 700;
   letter-spacing: -0.17px;
   text-transform: uppercase;
+}
+
+.Link:hover {
+  color: var(--red3);
 }
 
 @media screen and (max-width: 816px) {

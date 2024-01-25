@@ -28,47 +28,33 @@ export const Event = () => {
     "--swiper-pagination-bullet-inactive-opacity": "1",
     "--swiper-pagination-bullet-size": "12px",
     "--swiper-pagination-bullet-horizontal-gap": "4px",
-    "--swiper-pagination-bottom": "37px",
+    "--swiper-pagination-bottom": "3px",
   };
 
   return (
     <>
-      <section className={styles["EventSection"]}>
+      <section id="Events" className={styles["EventSection"]}>
         <div className={styles["EventText"]}>
           <h2 className={styles["EventTitle"]}>Events</h2>
           <p className={styles["EventName"]}>Ethel&apos;s Tray Race</p>
           <p className={styles["EventDate"]}>August 21, 2023</p>
         </div>
-        <div className={styles["SwiperContainer"]}>
-          <Swiper
-            style={customStyle}
-            mousewheel={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Mousewheel, Pagination]}
-            className={styles["SwiperContainer"]}
-          >
-            <SwiperSlide>
-              <Image
-                src="/Assets/Images/the-interior 2.png"
-                height={540}
-                width={800}
-                alt=""
-              />
-            </SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-          </Swiper>
+        <div className={styles["EventImageContainer"]}>
+          <Image
+            src="/Assets/Images/tray-race.jpeg"
+            height={540}
+            width={800}
+            alt=""
+            className={styles["EventImage"]}
+          />
         </div>
         <p className={styles["EventDescription"]}>
           For about 25 years, the annual Ethel&apos;s tray race has been raising
-          funds for local charities. in 2023, 22 teams participated and battled
+          funds for local charities. In 2023, 22 teams participated and battled
           it out in the gruelling event in which teams must balance water
           bottles on a tray while taking part in a relay race. Two-thousand
-          dollars was donated to Pound Dog Rescue, a faster home-based rescue
-          serving Waterloo.
+          dollars was donated to Dog Pound Rescue, a foster home-based rescue
+          serving Waterloo Region.
         </p>
       </section>
     </>

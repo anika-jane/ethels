@@ -56,7 +56,7 @@
 
 .Description {
   color: var(--orange2);
-  font-family: Roboto Condensed;
+
   font-size: var(--sm);
   font-weight: 400;
   line-height: 22px;
@@ -73,7 +73,7 @@
 
 .link {
   color: var(--orange3);
-  font-family: "Roboto Condensed";
+
   font-size: var(--mid);
   font-weight: 700;
   line-height: 26px;

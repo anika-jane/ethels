@@ -1,11 +1,42 @@
 .HeroSection {
-  height: 600px;
-  background-image: url("/Assets/Backgrounds/menuBackground.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  margin: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.HeroImageContainer {
-  background-image: url("/Assets/Backgrounds/menuBackground.png");
-  background-position: center;
+
+.HeroImageContainerLarge {
+  margin: 0 auto;
+}
+
+.HeroImageContainerMedium {
+  margin: 0 auto;
+  display: none;
+}
+
+.HeroImageContainerSmall {
+  margin: 0 auto;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .HeroImageContainerLarge {
+    display: none;
+  }
+
+  .HeroImageContainerMedium {
+    margin: 0 auto;
+    display: contents;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .HeroImageContainerMedium {
+    display: none;
+  }
+
+  .HeroImageContainerSmall {
+    margin: 0 auto;
+    display: contents;
+  }
 }

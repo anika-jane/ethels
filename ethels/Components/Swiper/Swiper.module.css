@@ -1,20 +1,11 @@
-.MenuContainer {
-  background-image: url(/Assets/Backgrounds/shapes-menu-768.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin-top: 156px;
-  margin-bottom: 46px;
-}
-
 .swiper {
-  height: 820px;
-  width: 600px;
+  height: 600px;
+  width: 515px;
 }
 
 .mySwiper {
-  height: 820px;
-  width: 600px;
+  height: 640px;
+  width: 515px;
   height: auto;
   max-width: 100%;
   margin: 0 auto;
@@ -36,6 +27,7 @@
 } */
 
 .swiperImage {
+  border-radius: 34px;
   display: block;
   width: 100%;
   height: 100%;

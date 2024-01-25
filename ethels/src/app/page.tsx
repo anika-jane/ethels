@@ -7,23 +7,25 @@ import { About } from "../../Components/About/About";
 import { Instagram } from "../../Components/Instagram/Instagram";
 import { Event } from "../../Components/Events/Events";
 
-// import App from "../../Components/Carousel/Carousel";
-// import Menu from "../../Components/Menu/Menu";
-// import { Hero } from "../../Components/Hero/Hero";
+import Menu from "../../Components/Menu/Menu";
+import { Hero } from "../../Components/Hero/Hero";
+import { Footer } from "../../Components/Footer/Footer";
+import SwipeElement from "../../Components/Swiper/Swiper";
 
 export default function Home() {
   return (
     <>
       <NavBar />
-      {/* <Hero /> */}
-      {/* <App /> */}
+      <Hero />
       <Legendary />
       <Instagram />
-      {/* <Menu /> */}
+      <Menu />
       <Specials />
       <Event />
+      <SwipeElement />
       <About />
       <Hours />
+      <Footer />
     </>
   );
 }

@@ -29,6 +29,7 @@
   /*fonts*/
   --c-font: "clarendon-urw-extra-wide";
   --p-font: "postino-std";
+  --r-font: "roboto";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,4 +42,5 @@
 
 body {
   background-color: var(--background);
+  font-family: Rob;
 }

@@ -10,7 +10,7 @@ export const About = () => {
           className={styles["Image"]}
           src="/Assets/Images/the-interior 2.png"
           height={515}
-          width={599}
+          width={600}
           alt="/"
         />
       </div>

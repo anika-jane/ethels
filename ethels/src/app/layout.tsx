@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto_Condensed } from "next/font/google";
 import "./fonts.css";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const roboto = Roboto_Condensed({ subsets: ["cyrillic"] });
 
 export const metadata: Metadata = {
   title: "Ethel's Lounge",
@@ -17,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }

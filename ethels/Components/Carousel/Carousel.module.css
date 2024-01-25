@@ -1,12 +1,14 @@
 .Swiper {
   width: 812px;
   height: 605px;
+  border: 1px solid black;
 }
 
 .Swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  border: 1px solid black;
 
   /* Center slide text vertically */
   display: flex;
@@ -25,7 +27,7 @@
   width: 20px;
   height: 20px;
   text-align: center;
-  line-height: 80px;
+  line-height: 20px;
   font-size: 12px;
   color: var(--ethels-red);
   opacity: 1;
@@ -35,4 +37,5 @@
 .SwiperContainer {
   width: 500px;
   height: 500px;
+  border: 1px solid black;
 }
