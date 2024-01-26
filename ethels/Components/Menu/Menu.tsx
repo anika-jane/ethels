@@ -32,6 +32,15 @@ export default function Menu() {
 
   return (
     <section id="Menu" className={styles["MenuSection"]}>
+      <div className={styles["TitleContainer"]}>
+        <Image
+          src="/Assets/Titles/title-menu@2x.png"
+          height={117}
+          width={188}
+          alt=""
+          className={styles["MenuTitle"]}
+        />
+      </div>
       <div className={styles["MenuContainer"]}>
         <Swiper
           style={customStyle}
@@ -54,6 +63,13 @@ export default function Menu() {
                 alt=""
                 className={styles["swiperImage"]}
               />
+              <Image
+                src="/Assets/Menu768/Ethels-Menu-Spring-2023-01-768.jpg"
+                height={461}
+                width={337}
+                alt=""
+                className={styles["swiperImage-small"]}
+              />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
@@ -67,6 +83,13 @@ export default function Menu() {
                 width={600}
                 alt=""
                 className={styles["swiperImage"]}
+              />
+              <Image
+                src="/Assets/Menu768/Ethels-Menu-Spring-2023-02-768.jpg"
+                height={461}
+                width={337}
+                alt=""
+                className={styles["swiperImage-small"]}
               />
             </Link>
           </SwiperSlide>
@@ -82,6 +105,13 @@ export default function Menu() {
                 alt=""
                 className={styles["swiperImage"]}
               />
+              <Image
+                src="/Assets/Menu768/Ethels-Menu-Spring-2023-03-768.jpg"
+                height={461}
+                width={337}
+                alt=""
+                className={styles["swiperImage-small"]}
+              />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
@@ -95,6 +125,13 @@ export default function Menu() {
                 width={600}
                 alt=""
                 className={styles["swiperImage"]}
+              />
+              <Image
+                src="/Assets/Menu768/Ethels-Menu-Spring-2023-04-768.jpg"
+                height={461}
+                width={337}
+                alt=""
+                className={styles["swiperImage-small"]}
               />
             </Link>
           </SwiperSlide>

@@ -9,6 +9,12 @@
   margin: 0 auto;
 }
 
+.HeroImageLarge {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: auto;
+}
+
 .HeroImageContainerMedium {
   margin: 0 auto;
   display: none;
@@ -27,6 +33,14 @@
   .HeroImageContainerMedium {
     margin: 0 auto;
     display: contents;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .HeroImageMedium {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
@@ -36,7 +50,25 @@
   }
 
   .HeroImageContainerSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     display: contents;
+  }
+
+  .HeroImageSmall {
+    max-width: 120%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .HeroSection {
+    margin: 0px;
+    overflow: hidden;
+    padding: 35px 0pc;
   }
 }

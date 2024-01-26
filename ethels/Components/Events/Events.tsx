@@ -1,14 +1,15 @@
 "use client";
-import React, { useRef, useEffect } from "react";
-import { register } from "swiper/element/bundle";
+import React, { useRef, useState } from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { register } from "swiper/element/bundle";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
 import styles from "./Events.module.css";
 
-import { Mousewheel, Pagination } from "swiper/modules";
-import Image from "next/image";
+import { Pagination, Mousewheel, Keyboard } from "swiper/modules";
 
 register();
 
@@ -39,14 +40,44 @@ export const Event = () => {
           <p className={styles["EventName"]}>Ethel&apos;s Tray Race</p>
           <p className={styles["EventDate"]}>August 21, 2023</p>
         </div>
-        <div className={styles["EventImageContainer"]}>
-          <Image
-            src="/Assets/Images/tray-race.jpeg"
-            height={540}
-            width={800}
-            alt=""
-            className={styles["EventImage"]}
-          />
+        <div className={styles["SwipeContainer"]}>
+          <Swiper
+            style={customStyle}
+            cssMode={true}
+            pagination={true}
+            mousewheel={true}
+            keyboard={true}
+            modules={[Pagination, Mousewheel, Keyboard]}
+            className={styles["mySwiper"]}
+          >
+            <SwiperSlide>
+              <Image
+                src="/Assets/Images/blatz-profile.jpeg"
+                height={540}
+                width={800}
+                alt=""
+                className={styles["swiperImage"]}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/Assets/Images/pinball.jpeg"
+                height={540}
+                width={800}
+                alt=""
+                className={styles["swiperImage"]}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src="/Assets/Images/stool.jpeg"
+                height={540}
+                width={800}
+                alt=""
+                className={styles["swiperImage"]}
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
         <p className={styles["EventDescription"]}>
           For about 25 years, the annual Ethel&apos;s tray race has been raising

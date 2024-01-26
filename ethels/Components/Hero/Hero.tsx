@@ -8,8 +8,8 @@ export const Hero = () => {
       <div className={styles["HeroImageContainerLarge"]}>
         <Image
           src="/Assets/HeroImage/image-hero-1280@2x.png"
-          height={600}
-          width={630}
+          height={635}
+          width={854}
           alt=""
           className={styles["HeroImageLarge"]}
         />
@@ -17,8 +17,8 @@ export const Hero = () => {
       <div className={styles["HeroImageContainerMedium"]}>
         <Image
           src="/Assets/HeroImage/image-hero-768@2x.png"
-          height={600}
-          width={630}
+          height={668}
+          width={660}
           alt=""
           className={styles["HeroImageMedium"]}
         />
@@ -26,8 +26,8 @@ export const Hero = () => {
       <div className={styles["HeroImageContainerSmall"]}>
         <Image
           src="/Assets/HeroImage/image-hero-mobile@2x.png"
-          height={600}
-          width={630}
+          height={503}
+          width={414}
           alt=""
           className={styles["HeroImageSmall"]}
         />

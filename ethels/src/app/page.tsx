@@ -10,7 +10,6 @@ import { Event } from "../../Components/Events/Events";
 import Menu from "../../Components/Menu/Menu";
 import { Hero } from "../../Components/Hero/Hero";
 import { Footer } from "../../Components/Footer/Footer";
-import SwipeElement from "../../Components/Swiper/Swiper";
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
       <Menu />
       <Specials />
       <Event />
-      <SwipeElement />
+
       <About />
       <Hours />
       <Footer />
