@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin-top: 80px;
   margin-bottom: 46px;
   padding: 0px 24px;
 }
@@ -47,6 +46,21 @@
   display: none;
 }
 
+.TitleContainer {
+  display: block;
+  width: 188px;
+  max-width: 30%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: -30px;
+}
+
+.MenuTitle {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 500px) {
   .swiperImage-small {
     display: block;
@@ -72,13 +86,12 @@
     margin: 0 auto;
   }
 
-  /* .MenuContainer {
-    background-image: url(/Assets/Backgrounds/shapes-menu-mobile@2x.png);
+  .MenuContainer {
+    background-image: url(/Assets/Backgrounds/shapes-menu-mobile.svg);
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-top: 80px;
     margin-bottom: 46px;
-  } */
+  }
 }

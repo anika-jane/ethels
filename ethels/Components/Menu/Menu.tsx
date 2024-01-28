@@ -52,10 +52,7 @@ export default function Menu() {
           className={styles["mySwiper"]}
         >
           <SwiperSlide>
-            <Link
-              href="https://ethelslounge.com/EthelsMenu.pdf"
-              target="_blank"
-            >
+            <Link href="https://ethelslounge.com/Menu.pdf" target="_blank">
               <Image
                 src="/Assets/Menu768/Ethels-Menu-Spring-2023-01-768.jpg"
                 height={820}
@@ -73,10 +70,7 @@ export default function Menu() {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link
-              href="https://ethelslounge.com/EthelsMenu.pdf"
-              target="_blank"
-            >
+            <Link href="https://ethelslounge.com/Menu.pdf" target="_blank">
               <Image
                 src="/Assets/Menu768/Ethels-Menu-Spring-2023-02-768.jpg"
                 height={820}
@@ -94,10 +88,7 @@ export default function Menu() {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link
-              href="https://ethelslounge.com/EthelsMenu.pdf"
-              target="_blank"
-            >
+            <Link href="https://ethelslounge.com/Menu.pdf" target="_blank">
               <Image
                 src="/Assets/Menu768/Ethels-Menu-Spring-2023-03-768.jpg"
                 height={820}
@@ -115,10 +106,7 @@ export default function Menu() {
             </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <Link
-              href="https://ethelslounge.com/EthelsMenu.pdf"
-              target="_blank"
-            >
+            <Link href="https://ethelslounge.com/Menu.pdf" target="_blank">
               <Image
                 src="/Assets/Menu768/Ethels-Menu-Spring-2023-04-768.jpg"
                 height={820}

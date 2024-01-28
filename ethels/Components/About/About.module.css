@@ -1,31 +1,108 @@
 .AboutSection {
   height: auto;
-  margin-bottom: 60px;
-  padding: 32px 24px;
+  padding: 32px 0px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   column-gap: 75px;
 }
 
-.Image {
-  margin: 0 auto;
-  border-radius: 13px;
+.SwipeContainer {
+  background-image: url(/Assets/Backgrounds/shapes-about-1280.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.swiper {
+  width: 600px;
+  height: 515px;
+}
+
+.mySwiper {
   width: 600px;
   height: 515px;
   max-width: 100%;
-  height: auto;
-}
-
-.AboutText {
   margin: 0 auto;
-  max-width: 359px;
-  height: auto;
+  padding: 24px;
 }
 
-.AboutParagraph {
-  color: var(--black);
-  font-size: var(--sm);
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.16px;
+.swiper-slide {
+  background: var(--orange3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .swiperSlide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.swiperImage {
+  border-radius: 34px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.AboutDescription {
+  width: 359px;
+  padding: 24px 0px;
+}
+
+.TitleContainer {
+  display: block;
+  width: 188px;
+  max-width: 30%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: -60px;
+  z-index: 200;
+}
+
+.MenuTitle {
+  width: 100%;
+  height: auto;
+  z-index: 400;
+}
+
+@media screen and (max-width: 1280px) {
+  .AboutSection {
+    height: auto;
+    padding: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  .SwipeContainer {
+    background-image: url(/Assets/Backgrounds/shapes-about-768.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .AboutDescription {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    padding: 24px;
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mySwiper {
+    width: 820px;
+    height: 600px;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+  }
 }

@@ -29,7 +29,7 @@ export const Event = () => {
     "--swiper-pagination-bullet-inactive-opacity": "1",
     "--swiper-pagination-bullet-size": "12px",
     "--swiper-pagination-bullet-horizontal-gap": "4px",
-    "--swiper-pagination-bottom": "3px",
+    "--swiper-pagination-bottom": "-5px",
   };
 
   return (
@@ -53,8 +53,8 @@ export const Event = () => {
             <SwiperSlide>
               <Image
                 src="/Assets/Images/blatz-profile.jpeg"
-                height={540}
-                width={800}
+                height={600}
+                width={820}
                 alt=""
                 className={styles["swiperImage"]}
               />
@@ -62,8 +62,8 @@ export const Event = () => {
             <SwiperSlide>
               <Image
                 src="/Assets/Images/pinball.jpeg"
-                height={540}
-                width={800}
+                height={600}
+                width={820}
                 alt=""
                 className={styles["swiperImage"]}
               />
@@ -71,8 +71,8 @@ export const Event = () => {
             <SwiperSlide>
               <Image
                 src="/Assets/Images/stool.jpeg"
-                height={540}
-                width={800}
+                height={600}
+                width={820}
                 alt=""
                 className={styles["swiperImage"]}
               />
