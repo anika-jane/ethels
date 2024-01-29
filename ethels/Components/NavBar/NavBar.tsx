@@ -1,9 +1,26 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import styles from "./NavBar.module.css";
 import Image from "next/image";
 
 export const NavBar = () => {
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
+    e.preventDefault();
+
+    const targetSection = document.getElementById(targetId.substring(1));
+
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <div className={styles["Main-Nav"]}>
@@ -24,12 +41,22 @@ export const NavBar = () => {
             alt="Ethel's Lounge 30th Anniversary Logo"
             className={styles["logo"]}
           />
-          <Link className={styles["Link"]} href="#Menu">
+
+          <a
+            href="#Menu"
+            className={styles["Link"]}
+            onClick={(e) => handleScroll(e, "#Menu")}
+          >
             Menu
-          </Link>
-          <Link className={styles["Link"]} href="#Specials">
+          </a>
+          <a
+            href="#Specials"
+            className={styles["Link"]}
+            onClick={(e) => handleScroll(e, "#Specials")}
+          >
             Specials
-          </Link>
+          </a>
+          {/* External Link remains unchanged */}
           <Link
             className={styles["Link"]}
             href="https://order2.silverwarepos.com/app/EthelsLounge#!/menu"
@@ -37,13 +64,20 @@ export const NavBar = () => {
           >
             Order
           </Link>
-          <Link className={styles["Link"]} href="#Events">
+          <a
+            href="#Events"
+            className={styles["Link"]}
+            onClick={(e) => handleScroll(e, "#Events")}
+          >
             Events
-          </Link>
-
-          <Link className={styles["Link"]} href="#About">
+          </a>
+          <a
+            href="#About"
+            className={styles["Link"]}
+            onClick={(e) => handleScroll(e, "#About")}
+          >
             About
-          </Link>
+          </a>
         </div>
       </div>
     </>

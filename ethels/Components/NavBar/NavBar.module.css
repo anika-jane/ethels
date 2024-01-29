@@ -48,7 +48,7 @@
   .LinkContainer {
     flex-wrap: wrap;
     /* justify-content: space-around; */
-    column-gap: 10px;
+    column-gap: 20px;
     justify-content: center;
     max-width: 354px;
     margin: 0 auto;

@@ -35,8 +35,7 @@ export const Hours = () => {
           114 King Street North, Waterloo
         </Link>
         <p className={styles["LocationClick"]}>click for directions</p>
-        <br />
-        <br />
+
         <Link href="tel:519-725-2361">
           <p className={styles["Phone"]}>519-725-2361</p>
         </Link>

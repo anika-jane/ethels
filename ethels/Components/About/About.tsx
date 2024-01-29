@@ -49,7 +49,7 @@ export const About = () => {
             <Swiper
               style={customStyle}
               cssMode={true}
-              pagination={true}
+              pagination={{ clickable: true }}
               mousewheel={true}
               keyboard={true}
               modules={[Pagination, Mousewheel, Keyboard]}

@@ -7,15 +7,34 @@
   color: var(--orange3);
   text-align: center;
   font-family: var(--c-font);
-  font-size: var(--xlg);
+  font-size: var(--xxlg);
   font-weight: 800;
-  line-height: 23px;
+  line-height: 32px;
 }
 
 .SmallText {
   color: var(--orange3);
   font-family: var(--c-font);
-  font-size: var(--xsm);
+  font-size: var(--mid);
   font-weight: 800;
-  line-height: 23px;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .LegendaryText {
+    color: var(--orange3);
+    text-align: center;
+    font-family: var(--c-font);
+    font-size: var(--xlg);
+    font-weight: 800;
+    line-height: 23px;
+  }
+
+  .SmallText {
+    color: var(--orange3);
+    font-family: var(--c-font);
+    font-size: var(--xsm);
+    font-weight: 800;
+    line-height: 23px;
+  }
 }
