@@ -1,27 +1,42 @@
+.About {
+  background-color: var(--orange4);
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
 .AboutSection {
   height: auto;
-  padding: 32px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 75px;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 40px;
 }
 
-.SwipeContainer {
-  background-image: url(/Assets/Backgrounds/shapes-about-1280.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.TitleContainer {
+  display: block;
+  width: 188px;
+  max-width: 30%;
+  margin: 0 auto;
+  height: auto;
+
+  position: relative;
+}
+
+.AboutTitle {
+  width: 100%;
+  height: auto;
 }
 
 .swiper {
-  width: 600px;
-  height: 515px;
+  width: 820px;
+  height: 600px;
 }
 
 .mySwiper {
-  width: 600px;
-  height: 515px;
+  width: 820px;
+  height: 600px;
   max-width: 100%;
   margin: 0 auto;
   padding: 24px;
@@ -34,13 +49,6 @@
   align-items: center;
 }
 
-/* .swiperSlide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
 .swiperImage {
   border-radius: 34px;
   display: block;
@@ -50,47 +58,32 @@
 }
 
 .AboutDescription {
-  width: 359px;
-  padding: 24px 0px;
-}
-
-.TitleContainer {
-  display: block;
-  width: 188px;
-  max-width: 30%;
+  text-align: left;
   margin: 0 auto;
-  height: auto;
-  margin-top: 40px;
-  margin-bottom: -60px;
+  padding: 24px;
+  max-width: 600px;
+  color: var(--black);
+  font-size: var(--mid);
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.18px;
 }
 
-.MenuTitle {
-  width: 100%;
-  height: auto;
+.AboutSectionSmall {
+  display: none;
 }
 
-@media screen and (max-width: 1280px) {
-  .AboutSection {
+@media screen and (max-width: 1130px) {
+  .AboutSectionSmall {
     height: auto;
-    padding: 32px 0px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    column-gap: 30px;
-  }
-  .SwipeContainer {
-    background-image: url(/Assets/Backgrounds/shapes-about-768.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
 
-  .AboutDescription {
-    width: 100%;
-    text-align: left;
-    margin: 0 auto;
-    padding: 24px;
-    max-width: 800px;
+  .AboutSection {
+    display: none;
   }
 }
 
@@ -102,5 +95,10 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 24px;
+  }
+
+  .AboutDescription {
+    width: 100%;
+    padding-bottom: 60px;
   }
 }

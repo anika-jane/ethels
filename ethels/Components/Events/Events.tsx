@@ -52,7 +52,7 @@ export const Event = () => {
           >
             <SwiperSlide>
               <Image
-                src="/Assets/Images/blatz-profile.jpeg"
+                src="/Assets/Events/IMG_8386.jpg"
                 height={600}
                 width={820}
                 alt=""
@@ -61,16 +61,7 @@ export const Event = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src="/Assets/Images/pinball.jpeg"
-                height={600}
-                width={820}
-                alt=""
-                className={styles["swiperImage"]}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                src="/Assets/Images/stool.jpeg"
+                src="/Assets/Events/tray-race-notfinal.jpg"
                 height={600}
                 width={820}
                 alt=""

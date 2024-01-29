@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Specials.module.css";
+import Link from "next/link";
 
 export const Specials = () => {
   return (
@@ -85,8 +86,16 @@ export const Specials = () => {
             <div className={styles["Special"]}>Wildcard Friday</div>
             <div className={styles["Description"]}>
               Check out our Instagram page{" "}
-              <span className={styles["link"]}>@ethelslounge</span> or ask your
-              server to see what we&apos;re serving up each week.
+              <span className={styles["link"]}>
+                {" "}
+                <Link
+                  href="https://www.instagram.com/ethelslounge/?hl=en"
+                  target="_blank"
+                >
+                  @ethelslounge{" "}
+                </Link>
+              </span>{" "}
+              or ask your server to see what we&apos;re serving up each week.
             </div>
             <div className={styles["When"]}>All day until it&apos;s gone!</div>
           </div>
@@ -164,8 +173,15 @@ export const Specials = () => {
           <div className={styles["Special"]}>Wildcard Friday</div>
           <div className={styles["Description"]}>
             Check out our Instagram page{" "}
-            <span className={styles["link"]}>@ethelslounge</span> or ask your
-            server to see what we&apos;re serving up each week.
+            <span className={styles["link"]}>
+              <Link
+                href="https://www.instagram.com/ethelslounge/?hl=en"
+                target="_blank"
+              >
+                @ethelslounge{" "}
+              </Link>
+            </span>{" "}
+            or ask your server to see what we&apos;re serving up each week.
           </div>
           <div className={styles["When"]}>All day until it&apos;s gone!</div>
         </div>
