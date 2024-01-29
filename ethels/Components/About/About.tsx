@@ -140,6 +140,15 @@ export const About = () => {
             >
               <SwiperSlide>
                 <Image
+                  src="/Assets/Images/sign.jpeg"
+                  height={600}
+                  width={820}
+                  alt=""
+                  className={styles["swiperImage"]}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
                   src="/Assets/Images/blatz-profile.jpeg"
                   height={600}
                   width={820}
@@ -159,6 +168,24 @@ export const About = () => {
               <SwiperSlide>
                 <Image
                   src="/Assets/Images/stool.jpeg"
+                  height={600}
+                  width={820}
+                  alt=""
+                  className={styles["swiperImage"]}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src="/Assets/Images/mennonite.jpeg"
+                  height={600}
+                  width={820}
+                  alt=""
+                  className={styles["swiperImage"]}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src="/Assets/Images/hosenbagen-haus.jpeg"
                   height={600}
                   width={820}
                   alt=""
