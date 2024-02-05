@@ -1,0 +1,144 @@
+.UpcomingEventsSection {
+  padding: 32px 24px;
+}
+
+.UEHeader {
+  color: var(--ethels-red);
+  font-family: var(--c-font);
+  font-size: var(--xxlg);
+  font-style: italic;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.Cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 24px;
+}
+
+.EventCard {
+  max-width: 880px;
+  background-color: var(--orange3);
+  border-radius: 20px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  margin: 0 auto;
+}
+
+.ImageContainer {
+  height: 166px;
+  width: 255px;
+  flex-shrink: 0;
+}
+
+.EventImage {
+  border-radius: 20px;
+  max-width: 255px;
+  width: 100%;
+  height: 166px;
+  flex-shrink: 0;
+}
+
+.CardText {
+  max-width: 553px;
+}
+
+.EventInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.EventName {
+  color: var(--ethels-red);
+  font-family: var(--c-font);
+  font-size: var(--mid);
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.EventDate {
+  color: var(--ethels-red);
+  font-family: var(--c-font);
+  font-size: var(--xsm);
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.EventDescription {
+  font-size: var(--mid);
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: var(--black);
+}
+
+@media screen and (max-width: 768px) {
+  .ImageContainer {
+    height: 290px;
+    width: 255px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .EventImage {
+    border-radius: 20px;
+    max-width: 255px;
+    height: 290px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 24px;
+  }
+
+  .EventCard {
+    max-width: 880px;
+    background-color: var(--orange3);
+    border-radius: 20px;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 0 auto;
+  }
+
+  .ImageContainer {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .EventImage {
+    border-radius: 20px;
+    max-width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+
+  .EventInfo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

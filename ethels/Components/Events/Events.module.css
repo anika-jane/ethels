@@ -102,4 +102,12 @@
     text-align: left;
     padding: 0px 24px;
   }
+
+  .swiperImage {
+    border-radius: 34px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
 }
