@@ -138,7 +138,7 @@ export const Upcoming = () => {
         <div className={styles["EventCard"]}>
           <div className={styles["ImageContainer"]}>
             <Image
-              src="/Assets/Events/tray-race-notfinal.jpg"
+              src="/Assets/Images/FishTaco.jpeg"
               height={166}
               width={255}
               alt=""
