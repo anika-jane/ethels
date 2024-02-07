@@ -94,7 +94,7 @@ export const Upcoming = () => {
             <div className={styles["CardBody"]}>
               <p className={styles["EventDescription"]}>
                 Head on over to Ethel's for your chance to win 2 tickets and
-                travel expenses to see the Toronto Maple Leafs vs. Caroline
+                travel expenses to see the Toronto Maple Leafs vs. Carolina
                 Hurricanes on March 16th.
                 <br />1 ticket per entry
                 <br /> Must be present to win, and ready to go!
