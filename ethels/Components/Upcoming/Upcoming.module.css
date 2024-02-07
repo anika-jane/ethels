@@ -23,7 +23,7 @@
 }
 
 .EventCard {
-  width: 880px;
+  width: 100%;
   max-width: 880px;
   background-color: var(--orange3);
   border-radius: 20px;
