@@ -15,7 +15,7 @@ export const Specials = () => {
             <div className={styles["Description"]}>
               Our famous pulled pork. Get it piled high and baked on our cheese
               nachos with green onions and BBQ sauce, or served on a kaiser bun
-              toped with creamy slaw and jalapeño.
+              topped with creamy slaw and jalapeño.
             </div>
             <div className={styles["When"]}>Available at 5pm</div>
           </div>
