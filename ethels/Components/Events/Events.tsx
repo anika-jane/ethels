@@ -3,13 +3,24 @@ import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { register } from "swiper/element/bundle";
-
 import "swiper/css";
 import "swiper/css/pagination";
-
 import styles from "./Events.module.css";
-
 import { Pagination, Mousewheel, Keyboard } from "swiper/modules";
+
+// Correctly typed parameters for the custom loader function
+const customLoader = ({
+  src,
+  width,
+  quality,
+}: {
+  src: string;
+  width: number;
+  quality?: number; // Make quality optional
+}): string => {
+  // Implement your custom logic here
+  return `/Assets/Events${src}?w=${width}&q=${quality || 75}`;
+};
 
 register();
 
@@ -52,7 +63,8 @@ export const Event = () => {
           >
             <SwiperSlide>
               <Image
-                src="/Assets/Events/IMG_8386.jpg"
+                loader={customLoader}
+                src="/IMG_8386.jpg"
                 height={600}
                 width={820}
                 alt=""
@@ -61,7 +73,8 @@ export const Event = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src="/Assets/Events/tray-race-notfinal.jpg"
+                loader={customLoader}
+                src="/tray-race-notfinal.jpg"
                 height={600}
                 width={820}
                 alt=""

@@ -1,6 +1,21 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import styles from "./Upcoming.module.css";
+
+// Correctly typed parameters for the custom loader function
+const customLoader = ({
+  src,
+  width,
+  quality,
+}: {
+  src: string;
+  width: number;
+  quality?: number; // Make quality optional
+}): string => {
+  // Implement your custom logic here
+  return `/Assets/Images${src}?w=${width}&q=${quality || 75}`;
+};
 
 export const Upcoming = () => {
   return (
@@ -9,10 +24,11 @@ export const Upcoming = () => {
         <h3 className={styles["UEHeader"]}>Upcoming Events</h3>
       </div>
       <div className={styles["Cards"]}>
-        <div className={styles["EventCard"]}>
+        {/* <div className={styles["EventCard"]}>
           <div className={styles["ImageContainer"]}>
             <Image
-              src="/Assets/Images/MardiGras.jpeg"
+              loader={customLoader}
+              src="/Jambalaya.jpg"
               height={166}
               width={255}
               alt=""
@@ -48,7 +64,7 @@ export const Upcoming = () => {
                 </p>
                 <br />
                 <p className={styles["FeatureName"]}>
-                  Roast Beef Po'Boy &#160;&#160;&#160;$15
+                  Roast Beef Po&apos;Boy &#160;&#160;&#160;$15
                 </p>
                 <p className={styles["FeatureDes"]}>
                   A New Orleans classic. Slow roasted beef chuck, shredded
@@ -75,11 +91,12 @@ export const Upcoming = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className={styles["EventCard"]}>
+        </div> */}
+        {/* <div className={styles["EventCard"]}>
           <div className={styles["ImageContainer"]}>
             <Image
-              src="/Assets/Images/Screenshot 2024-02-07 at 11.50.30.png"
+              loader={customLoader}
+              src="/Screenshot 2024-02-07 at 11.50.30.png"
               height={166}
               width={255}
               alt=""
@@ -93,8 +110,8 @@ export const Upcoming = () => {
             </div>
             <div className={styles["CardBody"]}>
               <p className={styles["EventDescription"]}>
-                Head on over to Ethel's for your chance to win 2 tickets and
-                travel expenses to see the Toronto Maple Leafs vs. Carolina
+                Head on over to Ethel&apos;s for your chance to win 2 tickets
+                and travel expenses to see the Toronto Maple Leafs vs. Carolina
                 Hurricanes on March 16th.
                 <br />1 ticket per entry
                 <br /> Must be present to win, and ready to go!
@@ -103,11 +120,12 @@ export const Upcoming = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={styles["EventCard"]}>
           <div className={styles["ImageContainer"]}>
             <Image
-              src="/Assets/Images/FishFry.png"
+              loader={customLoader}
+              src="/FishFry.png"
               height={166}
               width={255}
               alt=""
@@ -121,9 +139,9 @@ export const Upcoming = () => {
             </div>
             <div className={styles["CardBody"]}>
               <p className={styles["EventDescription"]}>
-                Ethel's Good Friday Fish Fry, enjoy 2 5oz pieces of haddock,
-                potato wedges, slaw and tartar sauce for $21! Dine-in or place
-                your order for take-out{" "}
+                Ethel&apos;s Good Friday Fish Fry, enjoy 2 5oz pieces of
+                haddock, potato wedges, slaw and tartar sauce for $21! Dine-in
+                or place your order for take-out{" "}
                 <a
                   href="https://order2.silverwarepos.com/app/EthelsLounge#!/menu"
                   target="_blank"
@@ -131,6 +149,16 @@ export const Upcoming = () => {
                 >
                   online.
                 </a>
+                <br />
+                The last day to pre-order is Monday, March 25th.
+                <br />
+                <br />
+                * Max 4 orders per time slot
+                <br />
+                ** No orders after 7pm
+                <br />
+                *** Pre-ordering online? Make sure you select the correct date,
+                March 29th.
               </p>
             </div>
           </div>
@@ -138,7 +166,8 @@ export const Upcoming = () => {
         <div className={styles["EventCard"]}>
           <div className={styles["ImageContainer"]}>
             <Image
-              src="/Assets/Images/FishTaco.jpeg"
+              loader={customLoader}
+              src="/FishTaco.jpeg"
               height={166}
               width={255}
               alt=""
@@ -152,7 +181,7 @@ export const Upcoming = () => {
             </div>
             <div className={styles["CardBody"]}>
               <p className={styles["EventDescription"]}>
-                Get ready for everyone's favourite menu of the year!
+                Get ready for everyone&apos;s favourite menu of the year!
                 <br />
                 Drool worthy details coming soon.
               </p>
@@ -162,7 +191,8 @@ export const Upcoming = () => {
         <div className={styles["EventCard"]}>
           <div className={styles["ImageContainer"]}>
             <Image
-              src="/Assets/Images/Hosebagen.jpg"
+              loader={customLoader}
+              src="/Hosebagen.jpg"
               height={166}
               width={255}
               alt=""

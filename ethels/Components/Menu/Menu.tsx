@@ -11,6 +11,20 @@ import { Pagination, Mousewheel, Keyboard } from "swiper/modules";
 
 register();
 
+// Define the custom loader
+const customLoader = ({
+  src,
+  width,
+  quality,
+}: {
+  src: string;
+  width: number;
+  quality?: number;
+}) => {
+  // Example: Directly use src, adjust as needed
+  return `/Assets${src}?w=${width}&q=${quality || 75}`;
+};
+
 interface CustomStyle extends React.CSSProperties {
   "--swiper-pagination-color"?: string;
   "--swiper-pagination-bullet-inactive-color"?: string;
@@ -34,7 +48,8 @@ export default function Menu() {
     <section id="Menu" className={styles["MenuSection"]}>
       <div className={styles["TitleContainer"]}>
         <Image
-          src="/Assets/Titles/title-menu@2x.png"
+          loader={customLoader}
+          src="/Titles/title-menu@2x.png"
           height={117}
           width={188}
           alt=""
@@ -54,14 +69,16 @@ export default function Menu() {
           <SwiperSlide>
             <Link href="https://ethelslounge.com/Menu.pdf" target="_blank">
               <Image
-                src="/Assets/Menu768/Ethels-Menu-Spring-2023-01-768.jpg"
+                loader={customLoader}
+                src="/Menu768/Ethels-Menu-Spring-2023-01-768.jpg"
                 height={820}
                 width={600}
                 alt=""
                 className={styles["swiperImage"]}
               />
               <Image
-                src="/Assets/Menu768/Ethels-Menu-Spring-2023-01-768.jpg"
+                loader={customLoader}
+                src="/Menu768/Ethels-Menu-Spring-2023-01-768.jpg"
                 height={461}
                 width={337}
                 alt=""
@@ -72,14 +89,16 @@ export default function Menu() {
           <SwiperSlide>
             <Link href="https://ethelslounge.com/Menu.pdf" target="_blank">
               <Image
-                src="/Assets/Menu768/Ethels-Menu-Spring-2023-02-768.jpg"
+                loader={customLoader}
+                src="/Menu768/Ethels-Menu-Spring-2023-02-768.jpg"
                 height={820}
                 width={600}
                 alt=""
                 className={styles["swiperImage"]}
               />
               <Image
-                src="/Assets/Menu768/Ethels-Menu-Spring-2023-02-768.jpg"
+                loader={customLoader}
+                src="/Menu768/Ethels-Menu-Spring-2023-02-768.jpg"
                 height={461}
                 width={337}
                 alt=""
@@ -90,14 +109,16 @@ export default function Menu() {
           <SwiperSlide>
             <Link href="https://ethelslounge.com/Menu.pdf" target="_blank">
               <Image
-                src="/Assets/Menu768/Ethels-Menu-Spring-2023-03-768.jpg"
+                loader={customLoader}
+                src="/Menu768/Ethels-Menu-Spring-2023-03-768.jpg"
                 height={820}
                 width={600}
                 alt=""
                 className={styles["swiperImage"]}
               />
               <Image
-                src="/Assets/Menu768/Ethels-Menu-Spring-2023-03-768.jpg"
+                loader={customLoader}
+                src="/Menu768/Ethels-Menu-Spring-2023-03-768.jpg"
                 height={461}
                 width={337}
                 alt=""
@@ -108,14 +129,16 @@ export default function Menu() {
           <SwiperSlide>
             <Link href="https://ethelslounge.com/Menu.pdf" target="_blank">
               <Image
-                src="/Assets/Menu768/Ethels-Menu-Spring-2023-04-768.jpg"
+                loader={customLoader}
+                src="/Menu768/Ethels-Menu-Spring-2023-04-768.jpg"
                 height={820}
                 width={600}
                 alt=""
                 className={styles["swiperImage"]}
               />
               <Image
-                src="/Assets/Menu768/Ethels-Menu-Spring-2023-04-768.jpg"
+                loader={customLoader}
+                src="/Menu768/Ethels-Menu-Spring-2023-04-768.jpg"
                 height={461}
                 width={337}
                 alt=""

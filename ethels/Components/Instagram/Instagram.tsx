@@ -4,6 +4,20 @@ import Link from "next/link";
 import styles from "./Instagram.module.css";
 import Image from "next/image";
 
+// Correctly typed parameters for the custom loader function
+const customLoader = ({
+  src,
+  width,
+  quality,
+}: {
+  src: string;
+  width: number;
+  quality?: number; // Make quality optional
+}): string => {
+  // Implement your custom logic here
+  return `/Assets/Logo${src}?w=${width}&q=${quality || 75}`;
+};
+
 export const Instagram = () => {
   // Dynamically add the external script on the client side
   useEffect(() => {
@@ -32,7 +46,8 @@ export const Instagram = () => {
           className={styles["ILink"]}
         >
           <Image
-            src="/Assets/Logo/icon-insta.svg"
+            loader={customLoader}
+            src="/icon-insta.svg"
             width={24}
             height={24}
             alt="Link to Ethel's Lounge Instagram Page"
@@ -44,7 +59,8 @@ export const Instagram = () => {
           className={styles["FBLink"]}
         >
           <Image
-            src="/Assets/Logo/icon-facebook.svg"
+            loader={customLoader}
+            src="/icon-facebook.svg"
             width={24}
             height={24}
             alt="Link to Ethel's Lounge Facebook Page"
@@ -56,7 +72,8 @@ export const Instagram = () => {
           className={styles["XLink"]}
         >
           <Image
-            src="/Assets/Logo/icon-x.svg"
+            loader={customLoader}
+            src="/icon-x.svg"
             width={24}
             height={24}
             alt="Link to Ethel's Lounge X (Twitter) Page"

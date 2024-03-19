@@ -4,6 +4,20 @@ import Link from "next/link";
 import styles from "./NavBar.module.css";
 import Image from "next/image";
 
+// Correctly typed parameters for the custom loader function
+const customLoader = ({
+  src,
+  width,
+  quality,
+}: {
+  src: string;
+  width: number;
+  quality?: number; // Make quality optional
+}): string => {
+  // Implement your custom logic here
+  return `/Assets/Logo${src}?w=${width}&q=${quality || 75}`;
+};
+
 export const NavBar = () => {
   const handleScroll = (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -26,7 +40,8 @@ export const NavBar = () => {
       <div className={styles["Main-Nav"]}>
         <div className={styles["Header-Logo"]}>
           <Image
-            src="/Assets/Logo/ethels-logo.png"
+            loader={customLoader}
+            src="/ethels-logo.png"
             width={274}
             height={141}
             alt="Ethel's Lounge 30th Anniversary Logo"
@@ -35,7 +50,8 @@ export const NavBar = () => {
 
         <div className={styles["LinkContainer"]}>
           <Image
-            src="/Assets/Logo/ethels-logo.png"
+            loader={customLoader}
+            src="/ethels-logo.png"
             width={274}
             height={141}
             alt="Ethel's Lounge 30th Anniversary Logo"

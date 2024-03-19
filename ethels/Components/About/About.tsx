@@ -3,11 +3,23 @@ import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { register } from "swiper/element/bundle";
-
 import "swiper/css";
 import "swiper/css/pagination";
-
 import styles from "./About.module.css";
+
+// Correctly typed parameters for the custom loader function
+const customLoader = ({
+  src,
+  width,
+  quality,
+}: {
+  src: string;
+  width: number;
+  quality?: number; // Make quality optional
+}): string => {
+  // Implement your custom logic here
+  return `/Assets${src}?w=${width}&q=${quality || 75}`;
+};
 
 import { Pagination, Mousewheel, Keyboard } from "swiper/modules";
 
@@ -37,7 +49,8 @@ export const About = () => {
       <section id="About" className={styles["About"]}>
         <div className={styles["TitleContainer"]}>
           <Image
-            src="/Assets/Titles/title-about.svg"
+            loader={customLoader}
+            src="/Titles/title-about.svg"
             height={117}
             width={188}
             alt=""
@@ -57,7 +70,8 @@ export const About = () => {
             >
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/barblatz.jpg"
+                  loader={customLoader}
+                  src="/Images/barblatz.jpg"
                   height={600}
                   width={820}
                   alt=""
@@ -66,7 +80,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/outFront-lighttrail.png"
+                  loader={customLoader}
+                  src="/Images/outFront-lighttrail.png"
                   height={600}
                   width={820}
                   alt=""
@@ -75,7 +90,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/ethels-sign.jpg"
+                  loader={customLoader}
+                  src="/Images/ethels-sign.jpg"
                   height={600}
                   width={820}
                   alt=""
@@ -84,7 +100,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/backbar.png"
+                  loader={customLoader}
+                  src="/Images/backbar.png"
                   height={600}
                   width={820}
                   alt=""
@@ -93,7 +110,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/stools.jpg"
+                  loader={customLoader}
+                  src="/Images/stools.jpg"
                   height={600}
                   width={820}
                   alt=""
@@ -102,7 +120,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/tacosandnachos.png"
+                  loader={customLoader}
+                  src="/Images/tacosandnachos.png"
                   height={600}
                   width={820}
                   alt=""
@@ -111,7 +130,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/patio.png"
+                  loader={customLoader}
+                  src="/Images/patio.png"
                   height={600}
                   width={820}
                   alt=""
@@ -157,7 +177,8 @@ export const About = () => {
             >
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/barblatz.jpg"
+                  loader={customLoader}
+                  src="/Images/barblatz.jpg"
                   height={600}
                   width={820}
                   alt=""
@@ -166,7 +187,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/outFront-lighttrail.png"
+                  loader={customLoader}
+                  src="/Images/outFront-lighttrail.png"
                   height={600}
                   width={820}
                   alt=""
@@ -175,7 +197,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/ethels-sign.jpg"
+                  loader={customLoader}
+                  src="/Images/ethels-sign.jpg"
                   height={600}
                   width={820}
                   alt=""
@@ -184,7 +207,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/backbar.png"
+                  loader={customLoader}
+                  src="/Images/backbar.png"
                   height={600}
                   width={820}
                   alt=""
@@ -193,7 +217,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/stools.jpg"
+                  loader={customLoader}
+                  src="/Images/stools.jpg"
                   height={600}
                   width={820}
                   alt=""
@@ -202,7 +227,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/tacosandnachos.png"
+                  loader={customLoader}
+                  src="/Images/tacosandnachos.png"
                   height={600}
                   width={820}
                   alt=""
@@ -211,7 +237,8 @@ export const About = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Image
-                  src="/Assets/Images/patio.png"
+                  loader={customLoader}
+                  src="/Images/patio.png"
                   height={600}
                   width={820}
                   alt=""
